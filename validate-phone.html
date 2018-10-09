@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var numberPhoneOne = '(84)-(0978489648)';
+    var numberPhoneTwo = '(a8)-(22222222)';
+    function isNumberPhone(numberPhone) {
+        check = /^[(]{1}[0-9]{2}[)]{1}[-]{1}[(]{1}[0]{1}[0-9]{9}[)]{1}$/;
+        if (check.test(numberPhone))
+            return true;
+        return false;
+    }
+    console.log(isNumberPhone(numberPhoneOne));
+    console.log(isNumberPhone(numberPhoneTwo));
+</script>
+</body>
+</html>
